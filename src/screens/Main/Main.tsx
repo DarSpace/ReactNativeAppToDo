@@ -1,21 +1,21 @@
 import React, { FC } from 'react';
-import { View, Text } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
+import { View, Text, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import styled from 'styled-components/native';
 
-import ButtomTabs from '@react-navigation/native'
+import ButtomTabs from '@react-navigation/native';
 import 'react-native-gesture-handler';
 
+interface IMainProps {}
 
+// <Image source={require("profile.png")} />;
 
-interface IMainProps { }
+const Main: FC<IMainProps> = (props) => {
+  return (
+    <View>
+      <Text>Main Screen</Text>
+    </View>
+  );
+};
 
-const Main: FC<IMainProps> = props => {
-    return (
-
-        <View><Text>Main Screen</Text></View>
-
-    )
-
-}
-
-export default Main; 
+export default Main;
