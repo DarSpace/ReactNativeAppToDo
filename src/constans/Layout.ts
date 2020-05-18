@@ -12,9 +12,9 @@ const wp = (percentage: number) => {
 export default {
   window: {
     width,
-    height
+    height,
   },
   wp,
   statusBar: Constants.statusBarHeight,
-  isSmallDevice: width < 375
+  isSmallDevice: width < 375,
 };

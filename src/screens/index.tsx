@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, StatusBar } from 'react-native';
 import styled from 'styled-components/native';
 
 import Colors from '../constans/Colors';
