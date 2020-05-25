@@ -12,11 +12,6 @@ const defaultState = (): ITodoListReducer => ({
       description: 'Pierwszy description',
       id: 1,
     },
-    {
-      name: 'Drugi',
-      description: 'Drugi description',
-      id: 2,
-    },
   ],
 });
 
@@ -28,6 +23,14 @@ export default (state = defaultState(), action: any): ITodoListReducer => {
         TodoListComp: [...state.TodoListComp, action.newElem],
       };
     }
+
+    case actionTypes.DELETE_ELEM: {
+      return {
+        ...state,
+        TodoListComp: [...state.TodoListComp.filter((elem) => elem.id !== action.elemId)],
+      };
+    }
+
     default: {
       return state;
     }

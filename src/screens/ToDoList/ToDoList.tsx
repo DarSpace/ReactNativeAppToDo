@@ -11,7 +11,6 @@ import TodoListComp from '../../components/TodoListComp';
 
 interface IMainProps {}
 
-//const ToDoList: FC<IMainProps> = (props) => {
 const ToDoList = ({ navigation }) => {
   const [formView, setFormView] = useState<boolean>(false);
 

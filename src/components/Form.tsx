@@ -37,6 +37,7 @@ const Form: FC<{ switchView(formView: boolean) }> = (props) => {
       setNewElemTodoList({
         name: nameInput,
         description: descInput,
+        id: new Date().getTime(),
       } as ISingleElementList),
     );
     props.switchView(false);
@@ -47,6 +48,7 @@ const Form: FC<{ switchView(formView: boolean) }> = (props) => {
       <CustomTextInput value={nameInput} onChange={nameValueChange} placeholder="Name" />
 
       <CustomTextInput value={descInput} onChange={descriptionValueChange} placeholder="Description" />
+
       <Button title="Zapisz" onPress={saveData} />
     </Warpper>
   );
