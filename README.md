@@ -2,14 +2,14 @@
 
 ## **Folders Structure**
 
-- **actions** (actions for redux)
+- **actions/types** (actions and types for redux)
 - **assets** (img)
 - **components** (only re useable part of code)
 - **constans** (only const variable)
 - **entities** (typing for typescript)
 - **reducers** (all reducers for redux)
 - **screens** (all apps screens (pages))
-  - **[FOLDER]** (all you need to single screen)
+  - **[Main, ThirdScreen, ToDoList]** (all you need to single screen)
 - **tools** (reuseable tools)
 
 ## **Usage**
