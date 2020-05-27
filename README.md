@@ -9,7 +9,9 @@
 - **entities** (typing for typescript)
 - **reducers** (all reducers for redux)
 - **screens** (all apps screens (pages))
-  - **[Main, ThirdScreen, ToDoList]** (all you need to single screen)
+  - **[Main]** (home screen)
+  - **[ToDoList]** (lists screen)
+  - **[ThirdScreen]** (info screen)
 - **tools** (reuseable tools)
 
 ## **Usage**
